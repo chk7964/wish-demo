@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Image from "next/image"
+// import Image from "next/image"
 import axios from "axios"
 import { useState } from "react"
 import { Fade, Bounce, Slide } from "react-awesome-reveal"
@@ -7,7 +7,7 @@ import slugify from "slugify"
 import Typist from "react-typist"
 import { CopyToClipboard } from "react-copy-to-clipboard"
 import { ToastContainer, toast } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
+// import "react-toastify/dist/ReactToastify.css"
 
 const Blog = ({ santhosh }) => {
   const wishername = santhosh[0].content
@@ -221,7 +221,7 @@ const Blog = ({ santhosh }) => {
             <Slide triggerOnce>
               <Fade>
                 <figure className="image is-centered">
-                  <Image
+                  <img
                     src="/womens-day-1.png"
                     alt="Happy Women's Day"
                     width={190}

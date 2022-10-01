@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/[blog]": "pages/[blog].js",
   "/api/wish/[hello]": "pages/api/wish/[hello].js",
   "/": "pages/index.html",
-  "/[blog]": "pages/[blog].js",
   "/404": "pages/404.html"
 }
