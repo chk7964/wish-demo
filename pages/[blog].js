@@ -176,7 +176,10 @@ const Blog = ({ santhosh }) => {
           }}
         />
 
-       
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-71LZH45GM6"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -185,7 +188,7 @@ const Blog = ({ santhosh }) => {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', ' tag id', {
+              gtag('config', 'G-71LZH45GM6', {
                 'page_title' : '${wishername} Wishing you a Happy Womens Day (மகளிர் தின வாழ்த்துகள்) 💛',
                 'page_location': '${pathname}'
               });

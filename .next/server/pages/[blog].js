@@ -247,6 +247,10 @@ const Blog = ({ santhosh  })=>{
                         }
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        async: true,
+                        src: "https://www.googletagmanager.com/gtag/js?id=G-71LZH45GM6"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
                         dangerouslySetInnerHTML: {
                             __html: `
             if(true) {
@@ -254,7 +258,7 @@ const Blog = ({ santhosh  })=>{
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', ' tag id', {
+              gtag('config', 'G-71LZH45GM6', {
                 'page_title' : '${wishername} Wishing you a Happy Womens Day (மகளிர் தின வாழ்த்துகள்) 💛',
                 'page_location': '${pathname}'
               });

@@ -1,4 +1,5 @@
 import Head from "next/head"
+// import Image from "next/image"
 import React, { Component } from "react"
 import { Fade, Slide } from "react-awesome-reveal"
 import Typist from "react-typist"
@@ -148,7 +149,10 @@ class RetrieveList extends Component {
             }}
           />
 
-         
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-71LZH45GM6"
+          ></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -176,7 +180,7 @@ class RetrieveList extends Component {
                     startDelay={1800}
                     cursor={{ hideWhenDone: true }}
                   >
-                    Mother Day 💛
+                    மகளிர் தின வாழ்த்துகள் 💛
                   </Typist>
                 </h1>
               </Slide>
