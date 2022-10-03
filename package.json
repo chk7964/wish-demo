@@ -1,37 +1,21 @@
 {
-  "name": "next-womens-day",
-  "description": "Happy Women's Day - Women's Day SMS Wishes and Name Wish Greetings.",
+  "name": "thapa-nextapp",
   "version": "0.1.0",
   "private": true,
-  "author": "Santhosh Veer",
-  "license": "MIT",
-  "keywords": [
-    "wishes",
-    "greetings",
-    "festival",
-    "messages",
-    "friendship day"
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-"export": "next build && next export"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "bulma": "^0.9.4",
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-awesome-reveal": "^3.8.1",
-    "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "18.2.0",
-    "react-toastify": "^9.0.8",
-    "react-typist": "^2.0.5",
-    "slugify": "^1.6.5"
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0"
   }
 }

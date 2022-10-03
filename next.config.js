@@ -1,3 +1,6 @@
 module.exports = {
-  trailingSlash: true,
-}
+  reactStrictMode: true,
+  images: {
+    domains: ["images.pexels.com"],
+  },
+};

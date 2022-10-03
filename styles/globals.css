@@ -1,301 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
+html,
 body {
-  font-size: 16px;
-  background-color: #1d3557;
-  height: 100vh;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: 'Hind Madurai', sans-serif;
-  font-weight: 600;
-  line-height: 1.618;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: grayscale;
-	overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(175, 180, 247, 0.302);
-    border-radius: 8px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(97, 245, 78, 0.5);
-}
-h1{font-weight:600;font-size:23px;}
-h2{font-weight:600;font-size:21px;}
-h3{font-weight:600;font-size:20px;}
-h4{font-weight:600;font-size:18px;}
-h5{font-weight:600;font-size:18px;}
-h1, h2, h3, h4, h5, h6 {
-    color: #050505;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
-}
-button,
-input,
-textarea,
-.control,
-.label,
-.notice {
-	text-align: center;
-	margin: 0 auto;
-}
-.title {
-  color:#d9ee1c;
-  font-weight: 800;
-}
-a:hover, a:focus, a:active {
-    color: #010508;
-}
-.content a {
-    color: #ffffff;
-}
-.notification {
-  background-color: #6930c3;
-  color: rgb(29, 7, 7);
-}
-.notification-more {
-  background-color: #2d42fd;
-  color: rgb(29, 7, 7);
-}
-.read-more {
-	display: flex;
-	flex-grow: 0.3;
-	font-weight: 600;
-	font-size: 20px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-	border-radius: 30px;
-	padding: 35px;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-font-smoothing: antialiased !important;
-	text-rendering: optimizelegibility !important;
-}
-.read-random {
-	display: flex;
-	flex-grow: 0.3;
-  font-family: 'Hind Madurai', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-	border-radius: 32px;
-	padding: 10px;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-font-smoothing: antialiased !important;
-	text-rendering: optimizelegibility !important;
-}
-.input-box,
-textarea,
-.sign-button {
-	width: 45rem !important;
-	min-height: 3rem;
-}
-button {
-    max-width: 100%;
-}
-table {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    padding: 12px;
-    -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased !important;
-   -moz-font-smoothing: antialiased !important;
-   text-rendering: optimizelegibility !important;
-   border-bottom:2px solid #bbb !important;background-color:#d3d3d3
-}
-th {
-   white-space: nowrap;
-}
-.cooked table thead,.d-editor-preview table thead{border-bottom:2px solid #bbb !important;background-color:#d3d3d3}.cooked table tr,.d-editor-preview table tr{border-bottom:1px solid #bbb}
-.is-horizontal-center {
-    justify-content: center;
-}
-code {
-    word-break: break-all;
-}
-pre code {
-    padding: 0;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-}
-.content h1 {
-    font-size:28px;
-    font-weight: 800;
-}
-.content h2 {
-    font-size:21px;
-    font-weight: 600;
-}
-.content h3 {
-    font-size:20px;
-    font-weight: 600;
-}
-.content h4 {
-    font-size:18px;
-    font-weight: 600;
-}
-footer p {
-    font-size: 15px;
-    font-weight: 700;
-}
-.Toastify__toast {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast-container {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--rtl {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--dark {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--default {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--info {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--success {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--warning {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast--error {
-  font-family: 'Hind Madurai', sans-serif;
-}
-.Toastify__toast-body {
-  font-family: 'Hind Madurai', sans-serif;
-}
-p {
-  letter-spacing: .03em;
-  word-wrap: break-word;
-  font-family: 'Hind Madurai', sans-serif;
-  font-size: 14px;
-  color: #dfe686;
-  -moz-osx-font-smoothing: grayscale;
- -webkit-font-smoothing: antialiased !important;
- -moz-font-smoothing: antialiased !important;
- text-rendering: optimizelegibility !important;
-}
-.input-box,
-textarea,
-.sign-button {
-	width: 45rem !important;
-	min-height: 3rem;
-}
-button {
-    max-width: 100%;
-}
-.sign-button {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 12px;
-  -moz-osx-font-smoothing: grayscale;
- -webkit-font-smoothing: antialiased !important;
- -moz-font-smoothing: antialiased !important;
- text-rendering: optimizelegibility !important;
-}
-.input {
-  display: flex;
-  flex-grow: 0.3;
-  font-family: 'Hind Madurai', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  border-radius: 32px;
-  padding: 23px;
-  -moz-osx-font-smoothing: grayscale;
- -webkit-font-smoothing: antialiased !important;
- -moz-font-smoothing: antialiased !important;
- text-rendering: optimizelegibility !important;
-}
-.button-link {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 5px 0;
-  padding: 15px 32px;
-  color: #fff !important;
-  font-size: 16px;
-  line-height: 1.0;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.1);
-  background: linear-gradient(#4fb7f0,#29a0e0 60%,#29a0e0 90%,#36a6e2);
-  border-radius: 32px;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.14);
-  line-height: 26px;
-  letter-spacing: .03em;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-font-smoothing: antialiased !important;
-  text-rendering: optimizelegibility !important;
-  font-family: 'Hind Madurai', sans-serif;
-}
-.button-link:hover {
-background: linear-gradient(#36a6e2,#29a0e0 60%,#29a0e0 90%,#4fb7f0);
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-.button-link:active, .button-link:focus { background: #209cdf; color: #fff !important; }
-@media (max-width: 500px) {
-  .button-link {
-      margin: 10px 0 0 0;
-      width: 100%;
-  }
-}
-.subscribe-button {
-  display: block;
-  padding: 4px 10px;
-  border: #fff 1px solid;
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1em;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-.subscribe-button:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-.subscribe-form button {
-  opacity: 0.9;
-}
-.subscribe-form {
-  margin: 1.5em 0;
-  padding: 6.5vw 7vw 8vw;
-  border: #c5d2d9 1px solid;
-  text-align: center;
-  background: #e5eff5;
-  border-radius: 28px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-.subscribe-form-title {
-  margin: 0 0 3px 0;
   padding: 0;
-  color: #15171A;
-  font-size: 3.5rem;
-  line-height: 1;
-  font-weight: 600;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
-.subscribe-form-description {
-  margin-bottom: 0.2em 0 1em;
-  color: #738a94;
-  font-size: 2.1rem;
-  line-height: 1.55em;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-@media (max-width: 650px) {
-  .subscribe-form-title {
-      font-size: 2.4rem;
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.menu-bar {
+  border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
+  margin: 50px auto;
+  box-shadow: 0px 3px 20px 0px rgba(47, 47, 47, 0.5);
+}
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-weight: normal;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  /* border-radius: 25px; */
+}
+.menu-bar li:hover {
+  color: black;
+}
+.menu-bar li:hover::before {
+  background-color: #fff;
+  color: #777;
+  box-shadow: 0px 3px 20px 0px rgb(47, 47, 47);
+  /* transform: scale(1.2); */
+}
+
+/* 404 error page  */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* 404 error page styles  */
+
+#notfound {
+  position: relative;
+  height: 80vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: "Maven Pro", sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #fff;
+  border-color: #189cf0;
+  color: #189cf0;
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
   }
-  .subscribe-form-description {
-      font-size: 1.6rem;
+  .notfound h2 {
+    font-size: 26px;
   }
+}
+
+.ssr-styles {
+  margin: auto;
+  padding: 15px 20px;
+  width: 60%;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ssr-styles:last-child {
+  margin-bottom: 100px;
+}
+
+.ssr-styles-inside {
+  flex-direction: column;
+}
+
+.ssr-styles h3 {
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #189cf0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.ssr-styles h2:hover {
+  color: #189cf0;
+  cursor: pointer;
 }
