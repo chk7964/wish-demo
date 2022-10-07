@@ -1,15 +1,26 @@
-import Document, { Html, Head, Main, NextScript } from "next/document"
+import Document, {Html, Head, Main, NextScript } from 'next/document';
+import React from 'react';
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
-        <Head />
+      <Html className=''>
+        <Head>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png"/>
+        </Head>
         <body>
+        
+       
+
+
+       
           <Main />
+       
           <NextScript />
+       
         </body>
       </Html>
-    )
+    );
   }
 }
+export default MyDocument;
