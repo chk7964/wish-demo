@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import Link from 'next/link'
 import { useState, useEffect } from "react";
 import slugify from "slugify";
+import Head from "next/head";
+
 
 export default function Home(props) {
 
@@ -10,43 +12,32 @@ export default function Home(props) {
     console.log(uname, "hi");
     const [data, setData] = useState({ name: "" });
 
-  
-    const users = slugify(String(uname), {
+    let greeting;
+    if (uname === undefined) {
+        greeting = "[Your Name]";
+    } else {
+        greeting = uname;
+    }
+
+   
+
+
+
+    const users = slugify(String(greeting), {
         replacement: "-",
         remove: /[*+~.()'"!:@]/g,
         lower: false,
         strict: false,
     })
-   
- 
-   
-    // let params = new URLSearchParams(window.location.search); // object to get query or strings in url
-    // let myparams = "hii";
-    // if (myparams === null) {
-    // 	myparams = "[Your Name]";
-    // }
-    // if (myparams.length !== 0) {
-    // 	myparams = myparams.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ' ');
-    // 	console.log("name is there", myparams)
-    // }
-
-
-    // console.log(myparams);
-    // localStorage.setItem("name", myparams);
-    // var name1 = localStorage.getItem("name");
-    // console.log(name1);
 
     return (
         <>
-            <link rel="stylesheet" href="css/style.css" />
+        <Head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        </Head>
+         <div className="text-center">
 
-
-
-
-
-            <br />
             <div >
                 <h1>{users}</h1>
                 <p >की ओर से आपको</p>
@@ -54,9 +45,9 @@ export default function Home(props) {
             <b>
                 <p id='demo'> </p>
             </b>
-            <div><img src="/images/Lord1.png" /></div>
+            <div ><img className=" block mx-auto" src="/images/Lord1.png" /></div>
 
-            <br />
+   
 
             <div>
                 <div>
@@ -69,24 +60,25 @@ export default function Home(props) {
                     </p>
                 </div>
                 <br />
-                <div><img src="/images/Lord1.png" /></div>
+                <div><img className=" block mx-auto" src="/images/Lord1.png" /></div>
                 <p id="namefooter">{users}</p>
                 <br />
-                <div className="enter-name">
-                    <input id="name" className="" type="name"
+                <div className="flex">
+                    <input id="name" className="w-4/5 p-4 rounded mr-2.5 inline-block" type="text" minlength="5"
                         placeholder="👉 Enter your name here..." value={data.name}
                         onChange={(event) =>
                             setData({
                                 name: event.target.value,
                             })
+                            
                         } />
                     <Link
                         href={{
-                            pathname: "/Chrishtmas/share",
+                            pathname: "/chrishtmas/share",
                             query: data, // the data
                         }}
                     >
-                        <a className="btnn" style={{ color: "blue" }}>
+                        <a className="w-1/5 bg-green-500 rounded p-4 inline-block">
                             <span>👉</span> Create Wish
                         </a>
                     </Link>
@@ -165,6 +157,7 @@ export default function Home(props) {
                 <img src="/images/flowers.png" height="30px" width="30px" />
                 <br /><br />
             </marquee>
+            </div>
             {/* <audio controls autoplay preload="auto" hidden>
         <source src="./song/bhola1.mpeg"
             type="audio/ogg">
@@ -172,6 +165,26 @@ export default function Home(props) {
             type="audio/mpeg">
     </audio> */}
             {/* <script src="js/main.js"></script> */}
+            <style jsx>{`
+     .m1 {
+      position: fixed;
+      left: 2%;
+      width: auto;
+      height: 100%;
+      top: 1%;
+      color: #000;
+    }
+    
+    .m2 {
+      position: fixed;
+      right: 2%;
+      width: auto;
+      height: 100%;
+      top: 1%;
+      color: #000;
+    }
+
+      `}</style>
         </>
     )
 }

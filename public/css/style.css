@@ -1,6 +1,4 @@
-html {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
-}
+
 
 body{
   background-image:linear-gradient(red, transparent),
@@ -10,7 +8,7 @@ body{
   background-repeat:no-repeat;
 }
 
-.enter-name input[type=name] {
+/* .enter-name input[type=text] {
   background-color: #F2F919;
   color: black;
   border-radius: 10px;
@@ -51,24 +49,24 @@ body{
   animation-duration: 4s !important;
 }
 
-.enter-name input[type=name]::-webkit-input-placeholder {
+.enter-name input[type=text]::-webkit-input-placeholder {
   color: black;
   font-size: 18px;
 }
 
-.enter-name input[type=name]::-moz-placeholder {
+.enter-name input[type=text]::-moz-placeholder {
   color: #eee;
   font-size: 18px;
 }
 
-.enter-name input[type=name]:focus::-webkit-input-placeholder {
+.enter-name input[type=text]:focus::-webkit-input-placeholder {
   color: #c0392b;
 }
 
-.enter-name input[type=name]:focus::-moz-placeholder {
+.enter-name input[type=text]:focus::-moz-placeholder {
   color: #c0392b;
   font-size: 18px;
-}
+} */
 
 
 .m1 {
@@ -97,7 +95,7 @@ body{
 
 
 /* typing effect end */
-.footerbtn {
+/* .footerbtn {
   display: block;
   line-height: 15px;
   right: -10px;
@@ -176,19 +174,19 @@ body {
   animation-duration: 4s !important;
 }
 
-.enter-name input[type=name]::-webkit-input-placeholder {
+.enter-name input[type=text]::-webkit-input-placeholder {
   color: black;
   font-size: 18px;
 }
 
-.enter-name input[type=name]::-moz-placeholder {
+.enter-name input[type=text]::-moz-placeholder {
   color: #eee;
   font-size: 18px;
 }
 
-.enter-name input[type=name]:focus::-webkit-input-placeholder {
+.enter-name input[type=text]:focus::-webkit-input-placeholder {
   color: #c0392b;
-}
+} */
 
 
 .clickHeart{
@@ -206,13 +204,13 @@ body {
   }
 }
 
-img {
+/* img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.mainContainer {
+/* .mainContainer {
   background: white;
   max-width: 450px;
   min-height: 200px;
@@ -232,4 +230,4 @@ img {
   bottom: 2px;
 
 
-}
+} */

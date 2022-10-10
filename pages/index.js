@@ -1,9 +1,9 @@
+
 export default function Home() {
  return (
   <>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-  
-  
+   <link rel="stylesheet" href="headfoot.css" />
    <div className="header">
   <p><a href="./">Tools Font Basket</a></p>
 </div>
@@ -11,15 +11,9 @@ export default function Home() {
 <div className="scrollmenu">
   <div className="menu">
   <a href="./">Home</a>
-  <a href="./capitalize-case">CapitalizeCase Converter</a>
-  <a href="./fancy-text">Fancy Text</a>
-  <a href="./invisible-character/">Invisible Text Generator</a>  
-  <a href="./lower-case/">LowerCase Text Converter</a>
-  <a href="./numbers-to-words-converter/">Number To Word Converter</a>
-  <a href="./reverse-text/">Reverse Text Converter</a>
-  <a href="./shuffle-text/">Suffle Text </a>
-  <a href="./text-repeater/">Text Repeater</a>
-  <a href="./upper-case/">UpperCase Conveter</a>
+  <a href="./chrishtmas">Chrishtmas Wish</a>
+  <a href="./">Fancy Text</a>
+
 </div>
 </div>
 
