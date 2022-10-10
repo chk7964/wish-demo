@@ -50,7 +50,6 @@ export default function Home() {
     
     
            <div className="text-center">
-        <br/>
         <div className="font-bold">
             <h1 >{users}</h1>
             <p>की ओर से आपको</p>
@@ -62,6 +61,7 @@ export default function Home() {
             <div className="text-center">
         <img className="block mx-auto h-72" src="/images/flowers.png"/>
         </div>
+            <br/>
           
             <div >
             <div className="font-bold">

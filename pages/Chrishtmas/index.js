@@ -63,7 +63,7 @@ export default function Home(props) {
                 <div><img className=" block mx-auto" src="/images/Lord1.png" /></div>
                 <p id="namefooter">{users}</p>
                 <br />
-                <div className="flex">
+                <div className="flex h-auto">
                     <input id="name" className="w-4/5 p-4 rounded mr-2.5 inline-block" type="text" minlength="5"
                         placeholder="👉 Enter your name here..." value={data.name}
                         onChange={(event) =>
