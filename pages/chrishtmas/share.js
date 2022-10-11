@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import slugify from "slugify";
 import 'animate.css';
+import { ImWhatsapp, ImTelegram } from "react-icons/im";
 
 export default function Home() {
     const router = useRouter();
@@ -77,15 +78,11 @@ export default function Home() {
     </div>
     <div className="flex">
             <a id="share1" className="bg-green-400 p-4 rounded m-2 w-1/2"  href={Whatsappshare}
-            ><i className="fa fa-whatsapp"
-              ></i> <b>यहाँ से whatsapp पर शेयर करे </b><i
-              className="fa fa-whatsapp" ></i></a>
+            ><span className="inline-block"><ImWhatsapp/></span> <b>यहाँ से whatsapp पर शेयर करे </b><span className="inline-block"><ImWhatsapp/></span></a>
 
               <a id="share2"  className="bg-sky-500 p-4 rounded m-1 w-1/2 "  href={Telegramshare}
           
-            ><i className="fa fa-telegram" 
-             ></i> <b>यहाँ से Telegram पर शेयर करे </b><i
-              className="fa fa-telegram"></i></a>
+            ><span className="inline-block"><ImTelegram/></span> <b>यहाँ से Telegram पर शेयर करे </b><span className="inline-block"><ImTelegram/></span></a>
 
               {/* <a id="share3"  className="open-button"
             
