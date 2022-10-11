@@ -1,11 +1,12 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import slugify from "slugify";
+import 'animate.css';
 
 export default function Home() {
     const router = useRouter();
     const query = router.query;
-    const name = query.name;
+    const name = query.by;
     const users = slugify(String(name), {
         replacement: "-",
         remove: /[*+~.()'"!:@]/g,
@@ -42,16 +43,12 @@ export default function Home() {
      <>
      <Head>
     <meta name="google" content="notranslate" />
-    {/* <link rel="stylesheet" href="/css/style.css" /> */}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     </Head>
     
     
            <div className="text-center">
         <div className="font-bold">
-            <h1 >{users}</h1>
+            <h1 className="animate__animated animate__bounce">{users}</h1>
             <p>की ओर से आपको</p>
         </div>
                
@@ -75,7 +72,7 @@ export default function Home() {
         
             <br/>
             <div><img className="block mx-auto h-72" src="/images/flowers.png"/></div>
-            <br/><p id="namefooter">{users}</p>
+            <br/><p className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 w-1/4 block mx-auto">By- {users}</p>
             <br/>
     </div>
     <div className="flex">

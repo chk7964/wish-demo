@@ -3,14 +3,15 @@ import Link from 'next/link'
 import { useState, useEffect } from "react";
 import slugify from "slugify";
 import Head from "next/head";
+import 'animate.css';
 
 
 export default function Home(props) {
 
     const { query } = useRouter();
-    const uname = query.name;
+    const uname = query.by;
     console.log(uname, "hi");
-    const [data, setData] = useState({ name: "" });
+    const [data, setData] = useState({ by: "" });
 
     let greeting;
     if (uname === undefined) {
@@ -33,13 +34,13 @@ export default function Home(props) {
     return (
         <>
         <Head>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+           
+     
         </Head>
          <div className="text-center">
 
             <div >
-                <h1>{users}</h1>
+                <h1 className="animate__animated animate__bounce">{users}</h1>
                 <p >की ओर से आपको</p>
             </div>
             <b>
@@ -61,14 +62,14 @@ export default function Home(props) {
                 </div>
                 <br />
                 <div><img className=" block mx-auto" src="/images/Lord1.png" /></div>
-                <p>{users}</p>
+                <p className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 w-1/4 block mx-auto">By- {users}</p>
                 <br />
                 <div className="flex h-auto">
-                    <input id="name" className="w-4/5 p-4 rounded mr-2.5 inline-block" type="text" minlength="5"
-                        placeholder="👉 Enter your name here..." value={data.name}
+                    <input id="name" className="w-4/5 p-4 rounded mr-2.5 inline-block" type="text" minLength={5}
+                        placeholder="👉 Enter your name here..." value={data.by}
                         onChange={(event) =>
                             setData({
-                                name: event.target.value,
+                                by: event.target.value,
                             })
                             
                         } />
