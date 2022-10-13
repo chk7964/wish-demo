@@ -23,18 +23,18 @@ const Blog = ({ santhosh }) => {
     "&text=" +
     wishername +
     " Wishing you a Happy Women's Day"
-  const copied = () => {
-    toast.dark("📝 Copied", {
-      position: "top-right",
-      autoClose: 900,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      closeButton: false,
-    })
-  }
+  // const copied = () => {
+  //   toast.dark("📝 Copied", {
+  //     position: "top-right",
+  //     autoClose: 900,
+  //     hideProgressBar: true,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     closeButton: false,
+  //   })
+  // }
   //toast.success("😊 \n" + wishername, {
   //  position: "top-right",
   //  autoClose: 2500,
