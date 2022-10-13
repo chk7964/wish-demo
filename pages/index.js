@@ -14,16 +14,16 @@ class RetrieveList extends Component {
         /* eslint eqeqeq: 0 */
         if (name == 0) {
           console.log("Empty Title or Message")
-          toast.error("🤖 Empty Name", {
-            position: "top-right",
-            autoClose: 1000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            closeButton: false,
-          })
+          // toast.error("🤖 Empty Name", {
+          //   position: "top-right",
+          //   autoClose: 1000,
+          //   hideProgressBar: true,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          //   closeButton: false,
+          // })
           return false
         }
         //const users = encodeURIComponent(name)
@@ -38,16 +38,16 @@ class RetrieveList extends Component {
     }
   }
   PageToast() {
-    toast.dark("📝 Copied", {
-      position: "top-right",
-      autoClose: 900,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      closeButton: false,
-    })
+    // toast.dark("📝 Copied", {
+    //   position: "top-right",
+    //   autoClose: 900,
+    //   hideProgressBar: true,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    //   closeButton: false,
+    // })
   }
 
   render() {
