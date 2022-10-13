@@ -3,8 +3,8 @@ import React, { Component } from "react"
 import { Fade, Slide } from "react-awesome-reveal"
 import Typist from "react-typist"
 import slugify from "slugify"
-import { ToastContainer, toast } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
+// import { ToastContainer, toast } from "react-toastify"
+// import "react-toastify/dist/ReactToastify.css"
 
 class RetrieveList extends Component {
   componentDidMount() {
@@ -238,7 +238,7 @@ class RetrieveList extends Component {
                 >
                   Create Wishes
                 </button>
-                <ToastContainer />
+                {/* <ToastContainer /> */}
                 <br />
               </div>
               <br />

@@ -6,8 +6,8 @@ import { Fade, Bounce, Slide } from "react-awesome-reveal"
 import slugify from "slugify"
 import Typist from "react-typist"
 import { CopyToClipboard } from "react-copy-to-clipboard"
-import { ToastContainer, toast } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
+// import { ToastContainer, toast } from "react-toastify"
+// import "react-toastify/dist/ReactToastify.css"
 
 const Blog = ({ santhosh }) => {
   const wishername = santhosh[0].content
@@ -305,7 +305,7 @@ const Blog = ({ santhosh }) => {
               </button>
             </div>
             <div className="buttons is-centered">
-              <ToastContainer />
+              {/* <ToastContainer /> */}
               <CopyToClipboard text={pathname}>
                 <button
                   className="button is-danger read-random"
@@ -334,7 +334,7 @@ const Blog = ({ santhosh }) => {
                 🤖 Telegram
               </a>
             </div>
-            <ToastContainer />
+            {/* <ToastContainer /> */}
             <hr />
             <br />
           </div>
