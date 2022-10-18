@@ -45,7 +45,7 @@ export default function Home(props) {
         }
        
         // console.log('Free pizza!');
-        // console.log(e);
+       
     }
 
     
