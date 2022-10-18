@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import slugify from "slugify";
 import Head from "next/head";
 import 'animate.css';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Home(props) {
@@ -35,7 +35,7 @@ export default function Home(props) {
 
     const goTo = () =>  {
         if( document.getElementById('name').value === '' ){
-            // toast["warning"]("Please Enter Any Name")
+            toast["warning"]("Please Enter Any Name")
           }
           else {
             Router.push({
@@ -62,7 +62,7 @@ export default function Home(props) {
     <title>!! दिवाली की हार्दिक शुभकामनाएँ !!</title>
      
         </Head>
-        {/* <ToastContainer /> */}
+        <ToastContainer />
 
         {/* <style jsx>{`#ma{
       background: white;
