@@ -98,7 +98,7 @@ export default function Home() {
             </div>
     {/* <script src="js/main2.js"></script> */}
 
-    <audio autoPlay>
+    <audio autoPlay hidden >
         <source src="./song/bhola2.mpeg" type="audio/ogg"/>
         <source src="./song/bhola2.mpeg" type="audio/mpeg"/>
       </audio>
