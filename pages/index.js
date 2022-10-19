@@ -194,6 +194,10 @@ export default function Home(props) {
             type="audio/mpeg">
     </audio> */}
             {/* <script src="js/main.js"></script> */}
+            <audio autoPlay hidden >
+        <source src="diwali/b.mp3" type="audio/ogg"/>
+        <source src="diwali/b.mp3" type="audio/mpeg"/>
+      </audio>
             <style jsx>{`
      .m1 {
       position: fixed;
