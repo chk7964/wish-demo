@@ -97,7 +97,7 @@ export default function Home(props) {
                     </p>
                 </div>
                 <br />
-                <div><img className=" block mx-auto" src="/images/Lord1.png" /></div>
+                <div><img className=" block mx-auto" src="/diwali/lakshmi.png" /></div>
                 <p className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 w-52 block mx-auto uppercase font-bold border-2 border-rose-600">By- {users}</p>
                 <br />
                 <div className="flex h-20">

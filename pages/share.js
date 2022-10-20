@@ -78,7 +78,7 @@ export default function Home() {
             </div>
         
             <br/>
-            <div><img className="block mx-auto h-72" src="/images/flowers.png"/></div>
+            <div><img className="block mx-auto h-72" src="/diwali/lakshmi.png"/></div>
            <p className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 w-52 block mx-auto uppercase shadow-lg shadow-indigo-500/40 font-bold border-2 border-rose-600">By- {users}</p>
         
     </div>
